@@ -14,9 +14,17 @@
   position: absolute;
   top: expression(_pushupIETop = 10 + (document.documentElement.scrollTop || 0) + 'px');
 }
-
+#pushup * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
 .withReminder { padding-bottom: 6px; }
-#pushup a { outline-style: none; text-decoration: none; border: 0; }
+#pushup a { 
+  outline-style: none;
+  text-decoration: none;
+}
 
 #pushup .pushup_messageLink {
   float: left;
@@ -54,4 +62,4 @@
 }
 
 #pushup .pushup_messageLink:hover,
-#pushup .pushup_reminder:hover { text-decoration: underline; border: 0; }
+#pushup .pushup_reminder:hover { text-decoration: underline; }
