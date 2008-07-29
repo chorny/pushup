@@ -83,7 +83,6 @@ Extend(Pushup, {
 
   build: function() {
     this.pushup = document.createElement('div');
-    this.pushup.className = 'Pushup withoutReminder';
     Opacity.set(this.pushup, 0);
     this.pushup.id = 'pushup';
 
