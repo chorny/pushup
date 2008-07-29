@@ -54,4 +54,4 @@
 }
 
 #pushup .pushup_messageLink:hover,
-#pushup .pushup_reminder:hover { text-decoration: underline; }
+#pushup .pushup_reminder:hover { text-decoration: underline; border: 0; }
