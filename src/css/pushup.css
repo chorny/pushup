@@ -16,7 +16,7 @@
 }
 
 .withReminder { padding-bottom: 6px; }
-#pushup a { outline-style: none; }
+#pushup a { outline-style: none; text-decoration: none; border: 0; }
 
 #pushup .pushup_messageLink {
   float: left;
