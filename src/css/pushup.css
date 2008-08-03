@@ -21,7 +21,7 @@
   background: none;
 }
 .withReminder { padding-bottom: 6px; }
-#pushup a { 
+#pushup a {
   outline-style: none;
   text-decoration: none;
 }
@@ -47,7 +47,7 @@
 #pushup .pushup_message {
   position: relative;
   float: left;
-  marginRight: 3px;
+  margin-right: 3px;
   line-height: 22px;
   vertical-align: middle;
 }
