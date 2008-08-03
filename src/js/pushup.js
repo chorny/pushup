@@ -7,7 +7,7 @@
  */
 
 var Pushup = {
-  Version: '1.0.0',
+  Version: '1.0.1',
   options: {
     appearDelay: .5,
     fadeDelay: 6,
@@ -67,7 +67,7 @@ function Extend(destination, source) {
 Extend(Pushup, {
   start: function() {
     // get the image directory
-    if (this.options.images.indexOf('://') > -1)
+    if (/^(https?:\/\/|\/)/.test(this.options.images))
       this.images = this.options.images;
     else {
       var srcMatch = /pushup(?:-[\w\d.]+)?\.js(.*)/,
