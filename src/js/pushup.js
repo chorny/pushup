@@ -7,7 +7,7 @@
  */
 
 var Pushup = {
-  Version: '1.0.1',
+  Version: '1.0.2',
   options: {
     appearDelay: .5,
     fadeDelay: 6,
