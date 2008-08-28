@@ -7,7 +7,7 @@
  */
 
 var Pushup = {
-  Version: '1.0.2',
+  Version: '1.0.3',
   options: {
     appearDelay: .5,
     fadeDelay: 6,
@@ -110,7 +110,8 @@ Extend(Pushup, {
     }
 
     // Older Opera doesn't handle float correctly
-    if (Pushup.conditions.Opera) {
+    if (Pushup.Browser.Opera &&
+       (!window.opera.version || parseFloat(window.opera.version()) < 9.25)) {
       this.messageLink.style.cssFloat = 'none';
       this.reminder.style.cssFloat = 'none';
     }
