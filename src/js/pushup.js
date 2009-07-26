@@ -41,11 +41,12 @@ Pushup.conditions = {
     return version && parseFloat(version[1]) < 8;
   })(navigator.userAgent),
   Firefox: Pushup.Browser.Firefox &&
-    parseFloat(navigator.userAgent.match(/Firefox[\/\s](\d+)/)[1]) < 3,
+    parseFloat(navigator.userAgent.match(/Firefox[\/\s](\d+)/)[1]) < 3.5,
   Safari: Pushup.Browser.Safari &&
-    parseFloat(navigator.userAgent.match(/AppleWebKit\/(\d+)/)[1]) < 500,
+    parseFloat(navigator.userAgent.match(/AppleWebKit\/(\d+)/)[1]) < 530, //4
   Opera: Pushup.Browser.Opera && (!window.opera.version ||
-    parseFloat(window.opera.version()) < 9.6)
+    parseFloat(window.opera.version()) < 9.64)
+  //Todo: Chrome?
 };
 
 (function() {
