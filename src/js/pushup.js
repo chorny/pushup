@@ -28,7 +28,9 @@ var Pushup = {
   Browser: {
     IE: !!(window.attachEvent &&
       navigator.userAgent.indexOf('Opera') === -1),
-    Firefox: navigator.userAgent.indexOf('Firefox') > -1,
+    Firefox: navigator.userAgent.indexOf('Firefox') > -1 &&
+		navigator.userAgent.indexOf('Camino') < 1, 
+		//Latest camino includes the string Firefox/2.0.22
     Safari: navigator.userAgent.indexOf('AppleWebKit/') > -1 &&
       /Apple/.test(navigator.vendor),
     Opera: navigator.userAgent.indexOf('Opera') > -1
